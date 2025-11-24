@@ -497,4 +497,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
 
 <script src="js/dashboard.js"></script>
 </body>
-</html>
+</html>a
