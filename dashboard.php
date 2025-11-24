@@ -251,6 +251,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
         </div>
 
     </div>
+
+    <!-- Image Placeholder Section - Same size as hero section -->
+    <div class="image-placeholder-section">
+        <div class="image-placeholder">
+            <div class="placeholder-content">
+                <i class="fas fa-image"></i>
+                <h3>Image Placeholder</h3>
+                <p>Content will be added here</p>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Customize Modal -->
@@ -497,4 +508,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
 
 <script src="js/dashboard.js"></script>
 </body>
-</html>a
+</html>
