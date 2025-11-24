@@ -96,8 +96,22 @@
     gap: 1rem;
 }
 
+/* Quick Actions and Notes side by side */
 .split-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     margin-right: -1rem;
+}
+
+.quick-actions-card,
+.notes-card {
+    grid-column: span 1;
+}
+
+.todo-card,
+.calendar-card {
+    grid-column: span 2;
 }
 
 .split-right {
@@ -1089,41 +1103,46 @@
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
-    
+
+    .split-left {
+        display: flex !important;
+        flex-direction: column !important;
+        margin: 0;
+    }
+
     .stats-horizontal {
         grid-template-columns: repeat(3, 1fr);
         margin-left: 0 !important;
     }
-    
+
     .folders-grid {
         grid-template-columns: repeat(2, 1fr);
         margin-left: 0 !important;
     }
-    
-    .split-left,
+
     .split-right {
         margin: 0;
     }
-    
+
     .quick-actions-card,
     .todo-card,
     .notes-card {
         margin-right: 0;
     }
-    
+
     .ai-assistant-enhanced {
         margin-right: 0;
         min-height: 500px;
     }
-    
+
     .capabilities-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .quick-questions {
         grid-template-columns: 1fr;
     }
-    
+
     .subject-selector {
         flex-direction: column;
     }
