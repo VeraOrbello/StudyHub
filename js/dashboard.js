@@ -334,6 +334,30 @@ function initCalendar() {
     }
 
     renderCalendar();
+
+    // Initialize overlay calendar
+    initOverlayCalendar();
+}
+
+function initOverlayCalendar() {
+    const prevBtnOverlay = document.getElementById('prevMonthOverlay');
+    const nextBtnOverlay = document.getElementById('nextMonthOverlay');
+
+    if (prevBtnOverlay) {
+        prevBtnOverlay.addEventListener('click', () => {
+            calendarDate.setMonth(calendarDate.getMonth() -1);
+            renderOverlayCalendar();
+        });
+    }
+
+    if (nextBtnOverlay) {
+        nextBtnOverlay.addEventListener('click', () => {
+            calendarDate.setMonth(calendarDate.getMonth() +1);
+            renderOverlayCalendar();
+        });
+    }
+
+    renderOverlayCalendar();
 }
 
 async function renderCalendar() {

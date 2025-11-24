@@ -253,13 +253,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
     </div>
 </div>
 
-<!-- Image Placeholder Section - Separate section below hero -->
+<!-- Image Placeholder Section - Full screen background below hero -->
 <div class="image-placeholder-section">
-    <div class="image-placeholder">
-        <div class="placeholder-content">
-            <i class="fas fa-image"></i>
-            <h3>Image Placeholder</h3>
-            <p>Content will be added here</p>
+    <!-- Calendar overlay on the background image -->
+    <div class="calendar-overlay">
+        <div class="card calendar-card">
+            <div class="card-header">
+                <h3 id="currentMonthYearOverlay"><i class="fas fa-calendar"></i> <?= date('F Y'); ?></h3>
+                <div class="calendar-nav">
+                    <button class="btn btn-sm" id="prevMonthOverlay"><i class="fas fa-chevron-left"></i></button>
+                    <button class="btn btn-sm" id="nextMonthOverlay"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div id="calendarOverlay"></div>
         </div>
     </div>
 </div>

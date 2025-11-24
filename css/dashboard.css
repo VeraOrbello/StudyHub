@@ -29,7 +29,6 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    overflow-y: auto;
     padding: 0.5rem;
     z-index: 1;
 }
@@ -99,9 +98,9 @@
 /* Quick Actions and Notes side by side */
 .split-left {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 1rem;
-    margin-right: -1rem;
+    margin-left: 6rem;
 }
 
 .quick-actions-card,
@@ -145,7 +144,7 @@
 .stats-horizontal {
     margin-top: 12rem;
     display: grid;
-    margin-left: 15rem;
+    margin-left: 10rem;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
     margin-bottom: 1.9rem;
@@ -302,8 +301,8 @@
     transform: scale(1.1);
 }
 
-.quick-actions-card {   
-    margin-right: 19rem;
+.quick-actions-card {
+    margin-right: 14rem;
     background: rgba(107, 142, 156, 0.15);
     backdrop-filter: blur(10px);
     border-radius: 12px;
@@ -316,7 +315,7 @@
 .quick-actions {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.8rem;
+    gap: 3rem;
 }
 
 .action-btn {
@@ -536,7 +535,7 @@
 
 /* To-Do List Styles */
 .todo-card {
-    margin-right: 19rem;
+    margin-right: 14rem;
     background: rgba(107, 142, 156, 0.15);
     backdrop-filter: blur(10px);
     border-radius: 12px;
@@ -1218,33 +1217,19 @@ body::before {
     z-index: -1;
 }
 
-/* Image Placeholder Section */
+/* Image Placeholder Section - Full screen background image */
 .image-placeholder-section {
     width: 100%;
-    min-height: 100vh;
-    position: relative;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    margin-top: 2rem;
-}
-
-.image-placeholder {
-    width: 100%;
-    max-width: 1200px;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 16px;
-    border: 2px dashed rgba(255, 255, 255, 0.3);
+    position: relative;
+    background-image: url('../assets/Dashboard.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    margin-top: 2rem;
 }
 
 .placeholder-content {
@@ -2004,7 +1989,7 @@ textarea.form-control {
 .modal-quick-actions {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.8rem;
+    gap: 1.5rem;
     margin-top: 1rem;
 }
 
