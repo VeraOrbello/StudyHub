@@ -116,65 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
 
     <div class="split-layout">
 
-        <!-- LEFT SIDE - Quick Actions, Notes, and Calendar -->
-        <div class="split-left">
-            <!-- Quick Actions -->
-            <div class="quick-actions-card">
-                <h3>Quick Actions</h3>
-                <div class="quick-actions">
-                    <div class="action-btn" id="addAssignmentAction">
-                        <img src="assets/quick-actions/2.png" alt="Add Assignment">
-                        <span>Add Assignment</span>
-                    </div>
-                    <div class="action-btn" id="addScheduleAction">
-                        <img src="assets/schedule-icon.png" alt="Add Class">
-                        <span>Add Class</span>
-                    </div>
-                    <div class="action-btn" id="addTaskAction">
-                        <img src="assets/task-icon.png" alt="Add Task">
-                        <span>Add Task</span>
-                    </div>
-                    <div class="action-btn" id="addSubjectAction">
-                        <img src="assets/subject-icon.png" alt="Add Subject">
-                        <span>Add Subject</span>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Notes Section -->
-            <div class="notes-card">
-                <div class="notes-header">
-                    <h3><i class="fas fa-sticky-note"></i> Quick Notes</h3>
-                </div>
-                <div class="notes-list" id="quickNotesList"></div>
-                <div class="notes-add">
-                    <input type="text" class="notes-input" id="quickNoteInput" placeholder="Add a quick note...">
-                    <button class="add-note-btn" id="addQuickNoteBtn">Add</button>
-                </div>
-            </div>
-
-            <!-- To-Do List -->
-            <div class="todo-card">
-                <h3>To-Do List</h3>
-                <div class="todo-list" id="todoList"></div>
-                <div class="todo-add">
-                    <input type="text" class="todo-input" id="todoInput" placeholder="Add a new task...">
-                    <button class="add-todo-btn" id="addTodoBtn">Add</button>
-                </div>
-            </div>
-
-            <!-- Calendar -->
-            <div class="card calendar-card">
-                <div class="card-header">
-                    <h3 id="currentMonthYear"><i class="fas fa-calendar"></i> <?= date('F Y'); ?></h3>
-                    <div class="calendar-nav">
-                        <button class="btn btn-sm" id="prevMonth"><i class="fas fa-chevron-left"></i></button>
-                        <button class="btn btn-sm" id="nextMonth"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                </div>
-                <div id="calendar"></div>
-            </div>
-        </div>
 
         <!-- RIGHT SIDE - Stats and Folders -->
         <div class="split-right">
@@ -255,21 +197,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
 
 <!-- Image Placeholder Section - Full screen background below hero -->
 <div class="image-placeholder-section">
-    <!-- Calendar overlay on the background image -->
-    <div class="calendar-overlay">
-        <div class="card calendar-card">
-            <div class="card-header">
-                <h3 id="currentMonthYearOverlay"><i class="fas fa-calendar"></i> <?= date('F Y'); ?></h3>
-                <div class="calendar-nav">
-                    <button class="btn btn-sm" id="prevMonthOverlay"><i class="fas fa-chevron-left"></i></button>
-                    <button class="btn btn-sm" id="nextMonthOverlay"><i class="fas fa-chevron-right"></i></button>
-                </div>
-            </div>
-            <div id="calendarOverlay"></div>
-        </div>
-    </div>
-</div>
-
+<img src="assets/logo.png" alt="A cute cat">
+    
 <!-- Customize Modal -->
 <div id="customizeModal" class="modal">
     <div class="modal-content">

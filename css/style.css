@@ -987,6 +987,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     margin-bottom: 2rem;
+    margin-left: 5rem;
 }
 
 .color-picker-group {
